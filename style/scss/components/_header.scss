@@ -16,15 +16,15 @@ header {
 		display: grid;
 		grid-template-columns: repeat(2, auto);
 
-		div {
+		#profile {
 
 			display: flex;
 			align-items: center;
 			padding: 1rem;
 
 			background-color: map-get($palette, 'contrast');
-									
-			#profile {
+
+			#image {
 				max-width: 20rem;
 				border-radius: 100%;
 			}
@@ -34,30 +34,28 @@ header {
 			}
 		}
 
-		#triContainer{
+		.triangulo {
+			padding: 10;
+			
+			border-top: 11rem solid map-get($palette, 'background');
+			border-left: 60px solid map-get($palette, 'contrast');
+			//border-right: 0px solid map-get($palette, 'contrast2');
+			border-bottom: 11rem solid map-get($palette, 'background');
 
-			width: 80px;
+		}
+		.triangulo::after {
+
+			content: "";
 			padding: 0;
-
-			#triangulo1 {
-				z-index: 2;
-				padding: 0;
-				border-top: 11rem solid map-get($palette, 'contrast2');
-				border-left: 80px solid map-get($palette, 'contrast');
-				border-right: 0px solid map-get($palette, 'contrast2');
-				border-bottom: 11rem solid map-get($palette, 'contrast2');
-			}
-
-			#triangulo2{
-				z-index: 1;
-				position: relative;
-				padding: 0;
-				left: -60px;
-				border-top: 11rem solid map-get($palette, 'background');
-				border-left: 80px solid map-get($palette, 'contrast2');
-				border-right: 0px solid map-get($palette, 'background');
-				border-bottom: 11rem solid map-get($palette, 'background');
-			}
+			position: absolute;
+			top: 0;
+			left: 100px;
+			z-index: 10;
+			left: -80px;
+			border-top: 11rem solid map-get($palette, 'background');
+			border-left: 60px solid map-get($palette, 'contrast2');
+			//border-right: 0px solid map-get($palette, 'contrast2');
+			border-bottom: 11rem solid map-get($palette, 'background');
 		}
 	}
 

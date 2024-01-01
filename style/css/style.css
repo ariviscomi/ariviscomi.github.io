@@ -38,39 +38,35 @@ header #profileContainer {
   display: grid;
   grid-template-columns: repeat(2, auto);
 }
-header #profileContainer div {
+header #profileContainer #profile {
   display: flex;
   align-items: center;
   padding: 1rem;
   background-color: #141724;
 }
-header #profileContainer div #profile {
+header #profileContainer #profile #image {
   max-width: 20rem;
   border-radius: 100%;
 }
-header #profileContainer div #about {
+header #profileContainer #profile #about {
   display: none;
 }
-header #profileContainer #triContainer {
-  width: 80px;
-  padding: 0;
-}
-header #profileContainer #triContainer #triangulo1 {
-  z-index: 2;
-  padding: 0;
-  border-top: 11rem solid #1c3f60;
-  border-left: 80px solid #141724;
-  border-right: 0px solid #1c3f60;
-  border-bottom: 11rem solid #1c3f60;
-}
-header #profileContainer #triContainer #triangulo2 {
-  z-index: 1;
-  position: relative;
-  padding: 0;
-  left: -60px;
+header #profileContainer .triangulo {
+  padding: 10;
   border-top: 11rem solid #f2efea;
-  border-left: 80px solid #1c3f60;
-  border-right: 0px solid #f2efea;
+  border-left: 60px solid #141724;
+  border-bottom: 11rem solid #f2efea;
+}
+header #profileContainer .triangulo::after {
+  content: "";
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 100px;
+  z-index: 10;
+  left: -80px;
+  border-top: 11rem solid #f2efea;
+  border-left: 60px solid #1c3f60;
   border-bottom: 11rem solid #f2efea;
 }
 header #name {
