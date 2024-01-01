@@ -1,40 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 html {
   font-size: 62.5%;
+  padding: 0;
+  margin: 0;
 }
 html body {
   margin: 0;
   padding: 0;
   background-color: #f2efea;
+  font-family: "Roboto Flex";
   display: grid;
   grid-template-rows: auto 1 fr auto;
 }
+html body h1 {
+  font-size: 4.8rem;
+}
+html body h2 {
+  font-size: 2.2rem;
+}
+html body h3 {
+  font-size: 1.6rem;
+}
+html body h4 {
+  font-size: 1.2rem;
+}
 
 header {
-  padding: 1rem;
   margin-bottom: 1.5rem;
   box-shadow: 0px 1px 10px rgba(20, 23, 36, 0.5);
   display: grid;
-  grid-template-columns: 0.33fr auto;
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: repeat(2, auto);
   grid-template-areas: "profiler name" "profiler title";
 }
 header #profileContainer {
-  width: 33%;
-  height: auto;
   grid-area: profiler;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
 }
-header #profileContainer #profile {
-  max-width: 25rem;
+header #profileContainer div {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #141724;
+}
+header #profileContainer div #profile {
+  max-width: 20rem;
   border-radius: 100%;
 }
-header #profileContainer #about {
+header #profileContainer div #about {
   display: none;
+}
+header #profileContainer #triContainer {
+  width: 80px;
+  padding: 0;
+}
+header #profileContainer #triContainer #triangulo1 {
+  z-index: 2;
+  padding: 0;
+  border-top: 11rem solid #1c3f60;
+  border-left: 80px solid #141724;
+  border-right: 0px solid #1c3f60;
+  border-bottom: 11rem solid #1c3f60;
+}
+header #profileContainer #triContainer #triangulo2 {
+  z-index: 1;
+  position: relative;
+  padding: 0;
+  left: -60px;
+  border-top: 11rem solid #f2efea;
+  border-left: 80px solid #1c3f60;
+  border-right: 0px solid #f2efea;
+  border-bottom: 11rem solid #f2efea;
 }
 header #name {
   grid-area: name;
+  justify-self: center;
+  align-self: flex-end;
 }
 header #title {
   grid-area: title;
+  justify-self: center;
+  align-self: flex-start;
+}
+
+footer {
+  padding: 1rem;
+  display: flex;
+}
+footer #cuadrado {
+  border-top: 40px solid red;
+  border-left: 40px solid red;
+  border-right: 40px solid red;
+  border-bottom: 40px solid red;
+}
+footer #triangulo {
+  border-top: 40px solid transparent;
+  border-left: 40px solid red;
+  border-right: 40px solid transparent;
+  border-bottom: 40px solid transparent;
 }
 
 /*# sourceMappingURL=style.css.map */

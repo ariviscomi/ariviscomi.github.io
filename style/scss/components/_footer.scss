@@ -1,0 +1,20 @@
+footer{
+	padding: 1rem;
+
+	display: flex;
+
+	#cuadrado{
+		border-top: 40px solid red;
+		border-left: 40px solid red;
+		border-right: 40px solid red;
+		border-bottom: 40px solid red;
+	}
+	
+	#triangulo{
+	
+		border-top: 40px solid transparent;
+		border-left: 40px solid red;
+		border-right: 40px solid transparent;
+		border-bottom: 40px solid transparent;
+	}
+}

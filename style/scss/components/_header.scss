@@ -1,37 +1,76 @@
-header{
-	padding: 1rem;
+header {
 	margin-bottom: 1.5rem;
-	box-shadow: 0px 1px 10px map-get($palette,'shadow');
+	box-shadow: 0px 1px 10px map-get($palette, 'shadow');
 
 	display: grid;
-	grid-template-columns: .33fr auto;
-	grid-template-rows: repeat(2,auto);
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: repeat(2, auto);
 	grid-template-areas:
-	"profiler name"
-	"profiler title"
+		"profiler name"
+		"profiler title"
 	;
 
-	#profileContainer{
-		width: 33%;
-		height: auto;
-
+	#profileContainer {
 		grid-area: profiler;
 
-		#profile{
-			max-width: 25rem;
-			border-radius: 100%;
+		display: grid;
+		grid-template-columns: repeat(2, auto);
+
+		div {
+
+			display: flex;
+			align-items: center;
+			padding: 1rem;
+
+			background-color: map-get($palette, 'contrast');
+									
+			#profile {
+				max-width: 20rem;
+				border-radius: 100%;
+			}
+
+			#about {
+				display: none;
+			}
 		}
 
-		#about{
-			display: none;
+		#triContainer{
+
+			width: 80px;
+			padding: 0;
+
+			#triangulo1 {
+				z-index: 2;
+				padding: 0;
+				border-top: 11rem solid map-get($palette, 'contrast2');
+				border-left: 80px solid map-get($palette, 'contrast');
+				border-right: 0px solid map-get($palette, 'contrast2');
+				border-bottom: 11rem solid map-get($palette, 'contrast2');
+			}
+
+			#triangulo2{
+				z-index: 1;
+				position: relative;
+				padding: 0;
+				left: -60px;
+				border-top: 11rem solid map-get($palette, 'background');
+				border-left: 80px solid map-get($palette, 'contrast2');
+				border-right: 0px solid map-get($palette, 'background');
+				border-bottom: 11rem solid map-get($palette, 'background');
+			}
 		}
 	}
 
-	#name{
+
+	#name {
 		grid-area: name;
+		justify-self: center;
+		align-self: flex-end;
 	}
 
-	#title{
+	#title {
 		grid-area: title;
+		justify-self: center;
+		align-self: flex-start;
 	}
 }
