@@ -5,7 +5,7 @@ html{
 		margin: 0;
 		padding: 0;
 
-		background-color: map-get($palette,'white');
+		background-color: map-get($palette,'background');
 
 		display: grid;
 		grid-template-rows: auto 1 fr auto;

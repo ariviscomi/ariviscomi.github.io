@@ -1,9 +1,18 @@
 //! Palettes
+
+$color1:#141724ff;
+$color2: #1c3f60ff;
+$color3: #f2efeaff;
+$color4: #ef2d56ff;
+$color5: #bababaff;
+
+$fonts:('black':$color1, 'white':$color3, 'disable':$color5);
+
 $palette: (
-	'black': #141724ff,
-	'blue': #1c3f60ff,
-	'white': #f2efeaff,
-	'red': #ef2d56ff,
-	'grey': #bababaff,
-	'light-black': #14172480,
+	'contrast': $color1,
+	'contrast2': $color2,
+	'background': $color3,
+	'enfasis': $color4,
+	'disable': $color5,
+	'shadow': transparentize($color1,0.5)
 );
