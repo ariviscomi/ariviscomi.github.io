@@ -30,6 +30,8 @@ header {
 			}
 
 			#about {
+				position: absolute;
+				z-index: 10px;
 				display: none;
 			}
 		}
@@ -39,13 +41,15 @@ header {
 
 			position: relative;
 			left: 2rem;
-			
+
 			border-top: 11rem solid transparent;
 			border-left: 60px solid map-get($palette, 'contrast2');
 			//border-right: 0px solid map-get($palette, 'contrast2');
 			border-bottom: 11rem solid transparent;
 
+
 		}
+
 		.triangulo::after {
 			padding: 0;
 			content: "";
@@ -75,6 +79,9 @@ header {
 		}
 	}
 
+	#profileContainer :hover {
+		cursor: pointer;
+	}
 
 	#name {
 		grid-area: name;

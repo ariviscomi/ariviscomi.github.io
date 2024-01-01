@@ -49,6 +49,8 @@ header #profileContainer #profile #image {
   border-radius: 100%;
 }
 header #profileContainer #profile #about {
+  position: absolute;
+  z-index: 10px;
   display: none;
 }
 header #profileContainer .triangulo {
@@ -78,6 +80,9 @@ header #profileContainer .triangulo::before {
   border-top: 11rem solid transparent;
   border-left: 60px solid #1c3f60;
   border-bottom: 11rem solid transparent;
+}
+header #profileContainer :hover {
+  cursor: pointer;
 }
 header #name {
   grid-area: name;
