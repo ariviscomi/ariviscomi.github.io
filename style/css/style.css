@@ -53,21 +53,31 @@ header #profileContainer #profile #about {
 }
 header #profileContainer .triangulo {
   padding: 10;
-  border-top: 11rem solid #f2efea;
-  border-left: 60px solid #141724;
-  border-bottom: 11rem solid #f2efea;
+  position: relative;
+  left: 2rem;
+  border-top: 11rem solid transparent;
+  border-left: 60px solid #1c3f60;
+  border-bottom: 11rem solid transparent;
 }
 header #profileContainer .triangulo::after {
-  content: "";
   padding: 0;
+  content: "";
   position: absolute;
-  top: 0;
-  left: 100px;
-  z-index: 10;
-  left: -80px;
-  border-top: 11rem solid #f2efea;
+  top: -11rem;
+  left: -8rem;
+  border-top: 11rem solid #1c3f60;
+  border-left: 60px solid #141724;
+  border-bottom: 11rem solid #1c3f60;
+}
+header #profileContainer .triangulo::before {
+  padding: 0;
+  content: "";
+  position: absolute;
+  top: -11rem;
+  left: -2rem;
+  border-top: 11rem solid transparent;
   border-left: 60px solid #1c3f60;
-  border-bottom: 11rem solid #f2efea;
+  border-bottom: 11rem solid transparent;
 }
 header #name {
   grid-area: name;
