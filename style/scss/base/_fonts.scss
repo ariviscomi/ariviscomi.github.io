@@ -1,3 +1,44 @@
+//! FUENTES
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-$family:'Roboto Flex';
+html{
+	font-size: 62.5%;
+}
+
+
+$family: 'Roboto Flex';
+
+h1 {
+	font-size: 5.2rem;
+}
+
+h2 {
+	font-size: 3.2rem;
+}
+
+$h3size:2.2rem;
+
+h3 {
+	font-size: $h3size;
+}
+
+h4 {
+	font-size: 1.8rem;
+}
+
+p{
+	font-size: 1.4rem;
+}
+
+//! ICONOS
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+.material-symbols-outlined {
+	font-size: calc($h3size + .5rem);
+
+	font-variation-settings:
+		'FILL' 0,
+		'wght' 400,
+		'GRAD' 0,
+		'opsz' $h3size
+}

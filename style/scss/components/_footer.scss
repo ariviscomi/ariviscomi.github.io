@@ -1,20 +1,14 @@
 footer{
 	padding: 1rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
 
-	display: flex;
+	background-color: map-get($palette,'contrast2');
 
-	#cuadrado{
-		border-top: 40px solid red;
-		border-left: 40px solid red;
-		border-right: 40px solid red;
-		border-bottom: 40px solid red;
-	}
-	
-	#triangulo{
-	
-		border-top: 40px solid transparent;
-		border-left: 40px solid red;
-		border-right: 40px solid transparent;
-		border-bottom: 40px solid transparent;
+	color: map-get($palette,'background');
+
+	#C{
+		justify-self: right;
 	}
 }

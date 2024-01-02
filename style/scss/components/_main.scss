@@ -1,0 +1,27 @@
+main{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+
+	box-shadow: 0px 1px 10px map-get($palette, 'shadow');
+
+	#aside{
+		display: grid;
+		grid-template-rows: 1fr auto;
+
+		border-right: .2rem solid map-get($palette,'shadow');
+
+		padding: 1rem;
+
+		#contact{
+			align-items: center;
+		}
+	}
+
+	#exp{
+		padding: 1rem;
+
+		span{
+			font-size: 1.4rem;
+		}
+	}
+}

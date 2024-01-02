@@ -37,33 +37,34 @@ header {
 		}
 
 		.triangulo {
-			padding: 10;
 
+			padding: 10;
+			
 			position: relative;
 			left: 2rem;
-
+			
 			border-top: 11rem solid transparent;
 			border-left: 60px solid map-get($palette, 'contrast2');
 			//border-right: 0px solid map-get($palette, 'contrast2');
 			border-bottom: 11rem solid transparent;
-
-
+			
+			
 		}
-
+		
 		.triangulo::after {
 			padding: 0;
 			content: "";
-
+			
 			position: absolute;
 			top: -11rem;
 			left: -8rem;
-
+			
 			border-top: 11rem solid map-get($palette, 'contrast2');
 			border-left: 60px solid map-get($palette, 'contrast');
 			//border-right: 0px solid map-get($palette, 'contrast2');
 			border-bottom: 11rem solid map-get($palette, 'contrast2');
 		}
-
+		
 		.triangulo::before {
 			padding: 0;
 			content: "";
