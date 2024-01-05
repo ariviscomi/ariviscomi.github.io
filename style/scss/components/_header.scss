@@ -14,13 +14,15 @@ header {
 		grid-area: profiler;
 
 		display: grid;
-		grid-template-columns: repeat(2, auto);
+		grid-template-columns: 1fr auto;
 
 		#profile {
 
 			display: flex;
 			align-items: center;
-			padding: 1rem;
+			padding: 1rem 0rem 1rem 1rem;
+
+			min-width: 30rem;
 
 			background-color: map-get($palette, 'contrast');
 
@@ -38,13 +40,13 @@ header {
 
 		.triangulo {
 
-			padding: 10;
+			padding: 0;
 			
 			position: relative;
-			left: 2rem;
+			left: -0.2rem;
 			
 			border-top: 11rem solid transparent;
-			border-left: 60px solid map-get($palette, 'contrast2');
+			border-left: 6rem solid map-get($palette, 'contrast2');
 			//border-right: 0px solid map-get($palette, 'contrast2');
 			border-bottom: 11rem solid transparent;
 			
@@ -57,27 +59,27 @@ header {
 			
 			position: absolute;
 			top: -11rem;
-			left: -8rem;
+			left: -12rem;
 			
 			border-top: 11rem solid map-get($palette, 'contrast2');
-			border-left: 60px solid map-get($palette, 'contrast');
+			border-left: 6rem solid map-get($palette, 'contrast');
 			//border-right: 0px solid map-get($palette, 'contrast2');
 			border-bottom: 11rem solid map-get($palette, 'contrast2');
 		}
 		
-		.triangulo::before {
+		/* .triangulo::before {
 			padding: 0;
 			content: "";
 
 			position: absolute;
 			top: -11rem;
-			left: -2rem;
+			left: -6rem;
 
 			border-top: 11rem solid transparent;
-			border-left: 60px solid map-get($palette, 'contrast2');
+			border-left: 6rem solid map-get($palette, 'contrast2');
 			//border-right: 0px solid map-get($palette, 'contrast2');
 			border-bottom: 11rem solid transparent;
-		}
+		} */
 	}
 
 	#profileContainer :hover {
