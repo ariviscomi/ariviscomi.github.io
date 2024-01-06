@@ -26,19 +26,11 @@ h4 {
 	font-size: 1.8rem;
 }
 
-p{
+p, span, li{
 	font-size: 1.4rem;
 }
 
 //! ICONOS
-@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 
-.material-symbols-outlined {
-	font-size: calc($h3size + .5rem);
-
-	font-variation-settings:
-		'FILL' 0,
-		'wght' 400,
-		'GRAD' 0,
-		'opsz' $h3size
-}
+//* FLATICON
+@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-straight/css/uicons-bold-straight.css')
