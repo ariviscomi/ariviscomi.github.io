@@ -61,53 +61,26 @@ header #profileContainer {
   grid-area: profiler;
   display: grid;
   grid-template-columns: 1fr auto;
-  /* .triangulo::before {
-  	padding: 0;
-  	content: "";
-
-  	position: absolute;
-  	top: -11rem;
-  	left: -6rem;
-
-  	border-top: 11rem solid transparent;
-  	border-left: 6rem solid map-get($palette, 'contrast2');
-  	//border-right: 0px solid map-get($palette, 'contrast2');
-  	border-bottom: 11rem solid transparent;
-  } */
+  background-image: url("../../images/profile-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
 }
 header #profileContainer #profile {
   display: flex;
   align-items: center;
   padding: 1rem 0rem 1rem 1rem;
   min-width: 30rem;
-  background-color: #141724;
 }
 header #profileContainer #profile #image {
   max-width: 20rem;
   border-radius: 100%;
+  width: 50%;
 }
 header #profileContainer #profile #about {
   position: absolute;
   z-index: 10px;
   display: none;
-}
-header #profileContainer .triangulo {
-  padding: 0;
-  position: relative;
-  left: -0.09rem;
-  border-top: 11rem solid transparent;
-  border-left: 6rem solid #1c3f60;
-  border-bottom: 11rem solid transparent;
-}
-header #profileContainer .triangulo::after {
-  padding: 0;
-  content: "";
-  position: absolute;
-  top: -11rem;
-  left: -12rem;
-  border-top: 11rem solid #1c3f60;
-  border-left: 6rem solid #141724;
-  border-bottom: 11rem solid #1c3f60;
 }
 header #profileContainer :hover {
   cursor: pointer;
