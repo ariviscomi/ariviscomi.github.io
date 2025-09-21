@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Ariviscomi — Portfolio</title>
+	<meta name="description" content="Portfolio de ariviscomi — proyectos, habilidades y contacto" />
+	<!-- Fuentes -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+		<header>
+			<div class="brand">
+				<div class="logo">A</div>
+				<div>
+					<h1>ariviscomi</h1>
+					<p>Desarrollador · Diseñador · Aprendiz</p>
+				</div>
+			</div>
+			<nav id="site-nav">
+				<a href="#home" class="active">Inicio</a>
+				<a href="#projects">Proyectos</a>
+				<a href="#about">Sobre mí</a>
+				<a href="#contact">Contacto</a>
+				<!-- Sugerencia: coloca enlaces a tu GitHub/LinkedIn aquí -->
+			</nav>
+		</header>
+
+		<main>
+			<!-- HERO -->
+			<section id="home" class="hero">
+				<div class="card intro reveal">
+					<p class="badge">Portfolio · ariviscomi</p>
+					<h2>Hola, soy Ariel — creo interfaces limpias y experiencias web con intención.</h2>
+					<p>Frontend Developer con interés en proyectos accesibles, performantes y con buen diseño. Aquí verás algunos proyectos, mis habilidades y formas de contactarme.</p>
+
+					<div class="cta-row">
+						<a class="btn" id="view-projects">Ver proyectos</a>
+						<a class="btn secondary" href="https://github.com/ariviscomi" target="_blank" rel="noopener">Ver GitHub</a>
+						<!-- Puedes cambiar el enlace de GitHub a tu nombre de usuario -->
+					</div>
+
+					<div class="meta">
+						<span>📍 Basado en: Ciudad, País</span>
+						<span>💼 Disponible para: Freelance · Colaboraciones</span>
+						<span>📧 <a class="muted" href="mailto:tu@email.com">tu@email.com</a></span>
+					</div>
+				</div>
+
+				<aside class="card profile reveal">
+					<div class="avatar">AR</div>
+					<h3>Ariel</h3>
+					<p class="muted">Frontend Developer</p>
+
+					<div class="skills">
+						<div class="chip">HTML</div>
+						<div class="chip">CSS</div>
+						<div class="chip">JavaScript</div>
+						<div class="chip">React</div>
+					</div>
+
+					<div style="margin-top:12px;display:flex;gap:8px">
+						<a class="social" href="https://github.com/ariviscomi" target="_blank" rel="noopener" aria-label="GitHub">
+							<!-- simple GitHub SVG icon -->
+							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden>
+								<path d="M12 .5C5.73.5.75 5.48.75 11.75c0 4.86 3.14 8.98 7.5 10.44.55.1.75-.24.75-.53 0-.26-.01-1-.02-1.95-3.05.66-3.69-1.47-3.69-1.47-.5-1.28-1.22-1.62-1.22-1.62-.99-.68.08-.67.08-.67 1.1.08 1.68 1.12 1.68 1.12.98 1.68 2.57 1.2 3.2.92.1-.72.38-1.2.69-1.48-2.43-.28-4.98-1.22-4.98-5.44 0-1.2.43-2.17 1.12-2.94-.11-.28-.49-1.4.11-2.92 0 0 .92-.3 3.02 1.13a10.5 10.5 0 0 1 5.5 0c2.1-1.44 3.02-1.13 3.02-1.13.6 1.52.22 2.64.11 2.92.7.77 1.12 1.74 1.12 2.94 0 4.22-2.55 5.16-4.99 5.43.39.33.74.98.74 1.98 0 1.43-.01 2.58-.01 2.93 0 .29.2.64.76.53 4.36-1.46 7.5-5.58 7.5-10.44C23.25 5.48 18.27.5 12 .5z" fill="currentColor" />
+							</svg>
+						</a>
+						<a class="social" href="#" aria-label="LinkedIn (añadir enlace)">
+							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden>
+								<path d="M4.98 3.5C3.88 3.5 3 4.38 3 5.48c0 1.09.88 1.98 1.98 1.98 1.1 0 1.98-.89 1.98-1.98 0-1.1-.88-1.98-1.98-1.98zM3.5 8h3v12h-3V8zM9.5 8h2.86v1.64h.04c.4-.76 1.38-1.56 2.85-1.56 3.05 0 3.61 2.01 3.61 4.63V20h-3v-6.02c0-1.43-.03-3.27-2-3.27-2 0-2.31 1.56-2.31 3.17V20h-3V8z" fill="currentColor"/>
+							</svg>
+						</a>
+					</div>
+				</aside>
+			</section>
+
+			<!-- PROJECTS -->
+			<section id="projects" class="card reveal">
+				<div style="display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px">
+					<div>
+						<h3 style="margin:0">Proyectos destacados</h3>
+						<p class="muted" style="margin:6px 0 0 0">Algunos trabajos seleccionados. Haz clic para ver más.</p>
+					</div>
+					<div class="muted">Filtrar: <span class="chip">Web</span> <span class="chip">UI</span></div>
+				</div>
+
+				<div class="projects-grid" id="projects-grid">
+					<!-- Proyectos generados por JavaScript. Reemplaza con los tuyos en la sección "PROYECTOS_DATA" abajo -->
+				</div>
+			</section>
+
+			<!-- ABOUT / README -->
+			<section id="about" class="card reveal">
+				<h3 style="margin-top:0">Sobre mí</h3>
+				<div id="readme-content" class="muted">Cargando contenido desde README.md... (si existe)</div>
+				<!--
+					Sugerencia: Si quieres que la sección "Sobre mí" aparezca con el contenido de README.md,
+					coloca el archivo README.md en la raíz del repositorio y GitHub Pages lo servirá.
+					El script intentará cargar /README.md y convertir Markdown básico en HTML.
+				-->
+			</section>
+
+			<!-- CONTACT -->
+			<section id="contact" class="card reveal">
+				<h3 style="margin-top:0">Contacto</h3>
+				<p class="muted">¿Interesado en colaborar o tienes una idea? Escríbeme.</p>
+				<form id="contact-form" style="display:grid;gap:8px;margin-top:12px">
+					<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+						<input name="name" placeholder="Tu nombre" required style="padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit">
+						<input name="email" placeholder="Tu correo" type="email" required style="padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit">
+					</div>
+					<textarea name="message" placeholder="Tu mensaje" rows="5" required style="padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit"></textarea>
+					<div style="display:flex;gap:8px;align-items:center">
+						<!-- En GitHub Pages puedes usar Formspree o Netlify Forms; por ahora este formulario abrirá el cliente de correo -->
+						<button class="btn" type="submit">Enviar correo</button>
+						<a class="btn secondary" href="mailto:tu@email.com">Enviar por Email</a>
+					</div>
+				</form>
+			</section>
+
+		</main>
+		<footer class="reveal">
+			<div>© <span id="year"></span> ariviscomi — Hecho con ❤️ y HTML/CSS/JS</div>
+			<div class="muted">Sugerencia: Habilita GitHub Pages en Settings → Pages y usa la rama main (o gh-pages).</div>
+		</footer>
+	
+	<script src="app.js"></script>
+</body>
+</html>
