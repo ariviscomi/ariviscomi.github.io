@@ -91,8 +91,6 @@ Apoyo el movimiento **Open Source** 💻, disfruto de un buen café ☕ en compa
   <h4 width="100%">Sistemas Operativos</h4>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="32" alt="linux logo"  />
   <img width="12" />
-  <img src="https://cdn.simpleicons.org/ubuntu/E95420" height="32" alt="ubuntu logo"  />
-  <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" height="32" alt="windows8 logo"  />
 </div>
 </section>
