@@ -1,131 +1,547 @@
-<!doctype html>
-<html lang="es">
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<title>Ariviscomi — Portfolio</title>
-	<meta name="description" content="Portfolio de ariviscomi — proyectos, habilidades y contacto" />
-	<!-- Fuentes -->
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ariel Viscomi — Maker Patagónico</title>
+  <meta name="description" content="Portfolio de Ariel Viscomi. Maker Patagónico — IT, Dev & Música. San Carlos de Bariloche, Argentina.">
+  <meta name="author" content="Ariel Viscomi">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ariel Viscomi — Maker Patagónico">
+  <meta property="og:description" content="IT, Dev & Música desde la Patagonia Argentina.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ariviscomi.github.io">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Lexend:wght@300;350;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon (simple emoji-based) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏔️</text></svg>">
 </head>
 <body>
-		<header>
-			<div class="brand">
-				<div class="logo">A</div>
-				<div>
-					<h1>ariviscomi</h1>
-					<p>Desarrollador · Diseñador · Aprendiz</p>
-				</div>
-			</div>
-			<nav id="site-nav">
-				<a href="#home" class="active">Inicio</a>
-				<a href="#projects">Proyectos</a>
-				<a href="#about">Sobre mí</a>
-				<a href="#contact">Contacto</a>
-				<!-- Sugerencia: coloca enlaces a tu GitHub/LinkedIn aquí -->
-			</nav>
-		</header>
 
-		<main>
-			<!-- HERO -->
-			<section id="home" class="hero">
-				<div class="card intro reveal">
-					<p class="badge">Portfolio · ariviscomi</p>
-					<h2>Hola, soy Ariel — creo interfaces limpias y experiencias web con intención.</h2>
-					<p>Frontend Developer con interés en proyectos accesibles, performantes y con buen diseño. Aquí verás algunos proyectos, mis habilidades y formas de contactarme.</p>
+  <!-- ====== NAVIGATION ====== -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="dot"></span>
+        AV
+      </a>
 
-					<div class="cta-row">
-						<a class="btn" id="view-projects">Ver proyectos</a>
-						<a class="btn secondary" href="https://github.com/ariviscomi" target="_blank" rel="noopener">Ver GitHub</a>
-						<!-- Puedes cambiar el enlace de GitHub a tu nombre de usuario -->
-					</div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
 
-					<div class="meta">
-						<span>📍 Basado en: Ciudad, País</span>
-						<span>💼 Disponible para: Freelance · Colaboraciones</span>
-						<span>📧 <a class="muted" href="mailto:tu@email.com">tu@email.com</a></span>
-					</div>
-				</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" data-i18n="nav.about">Sobre mí</a></li>
+        <li><a href="#stack" data-i18n="nav.stack">Stack</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Proyectos</a></li>
+        <li><a href="#music" data-i18n="nav.music">Música</a></li>
+        <li><a href="#experience" data-i18n="nav.experience">Experiencia</a></li>
+        <li><a href="#blog" data-i18n="nav.blog">Blog</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contacto</a></li>
+        <li><button class="lang-toggle" id="langToggle">EN</button></li>
+      </ul>
+    </div>
+  </nav>
 
-				<aside class="card profile reveal">
-					<div class="avatar">AR</div>
-					<h3>Ariel</h3>
-					<p class="muted">Frontend Developer</p>
+  <!-- ====== HERO ====== -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="hero-badge" data-i18n="hero.badge">Bariloche, Patagonia Argentina</div>
+          <h1 class="hero-name">Ariel <span class="accent">Viscomi</span></h1>
+          <p class="hero-tagline" data-i18n="hero.tagline">Maker Patagónico — IT, Dev & Música</p>
+          <p class="hero-description" data-i18n="hero.description">
+            Creo tecnología que conecta la innovación con la vida cotidiana. 
+            Desde la Patagonia, construyo soluciones, automatizo procesos 
+            y produzco música — siempre aprendiendo, siempre creando.
+          </p>
+          <div class="hero-ctas">
+            <a href="#projects" class="btn-primary" data-i18n="hero.cta1">Ver proyectos</a>
+            <a href="#contact" class="btn-outline" data-i18n="hero.cta2">Contacto</a>
+          </div>
+        </div>
+        <div class="hero-avatar">
+          <div class="avatar-wrapper">
+            <img src="https://avatars.githubusercontent.com/u/22420798?v=4" alt="Ariel Viscomi" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span data-i18n="hero.scroll">scroll</span>
+      <div class="line"></div>
+    </div>
+  </section>
 
-					<div class="skills">
-						<div class="chip">HTML</div>
-						<div class="chip">CSS</div>
-						<div class="chip">JavaScript</div>
-						<div class="chip">React</div>
-					</div>
+  <!-- ====== ABOUT ====== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-divider"></div>
+      <h2 class="section-title reveal" data-i18n="about.title"><span>Sobre mí</span></h2>
+      <p class="section-subtitle reveal" data-i18n="about.subtitle">Quien soy más allá del código</p>
 
-					<div style="margin-top:12px;display:flex;gap:8px">
-						<a class="social" href="https://github.com/ariviscomi" target="_blank" rel="noopener" aria-label="GitHub">
-							<!-- simple GitHub SVG icon -->
-							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden>
-								<path d="M12 .5C5.73.5.75 5.48.75 11.75c0 4.86 3.14 8.98 7.5 10.44.55.1.75-.24.75-.53 0-.26-.01-1-.02-1.95-3.05.66-3.69-1.47-3.69-1.47-.5-1.28-1.22-1.62-1.22-1.62-.99-.68.08-.67.08-.67 1.1.08 1.68 1.12 1.68 1.12.98 1.68 2.57 1.2 3.2.92.1-.72.38-1.2.69-1.48-2.43-.28-4.98-1.22-4.98-5.44 0-1.2.43-2.17 1.12-2.94-.11-.28-.49-1.4.11-2.92 0 0 .92-.3 3.02 1.13a10.5 10.5 0 0 1 5.5 0c2.1-1.44 3.02-1.13 3.02-1.13.6 1.52.22 2.64.11 2.92.7.77 1.12 1.74 1.12 2.94 0 4.22-2.55 5.16-4.99 5.43.39.33.74.98.74 1.98 0 1.43-.01 2.58-.01 2.93 0 .29.2.64.76.53 4.36-1.46 7.5-5.58 7.5-10.44C23.25 5.48 18.27.5 12 .5z" fill="currentColor" />
-							</svg>
-						</a>
-						<a class="social" href="#" aria-label="LinkedIn (añadir enlace)">
-							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden>
-								<path d="M4.98 3.5C3.88 3.5 3 4.38 3 5.48c0 1.09.88 1.98 1.98 1.98 1.1 0 1.98-.89 1.98-1.98 0-1.1-.88-1.98-1.98-1.98zM3.5 8h3v12h-3V8zM9.5 8h2.86v1.64h.04c.4-.76 1.38-1.56 2.85-1.56 3.05 0 3.61 2.01 3.61 4.63V20h-3v-6.02c0-1.43-.03-3.27-2-3.27-2 0-2.31 1.56-2.31 3.17V20h-3V8z" fill="currentColor"/>
-							</svg>
-						</a>
-					</div>
-				</aside>
-			</section>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p data-i18n="about.p1">
+            Soy <strong>desarrollador, técnico IT y productor musical</strong>, nacido y residente en San Carlos de Bariloche, Argentina. Me apasiona la innovación, la tecnología, el medio ambiente y la sustentabilidad.
+          </p>
+          <p data-i18n="about.p2">
+            Trabajo como <strong>Técnico de Soporte de TI en INVAP</strong>, la empresa de alta tecnología argentina referente en los sectores nuclear, espacial, de defensa y medicina. En paralelo, estoy en transición activa hacia el mundo del desarrollo de software, DevOps e inteligencia artificial.
+          </p>
+          <p data-i18n="about.p3">
+            Apoyo el movimiento <strong>Open Source</strong>, disfruto de un buen café en compañía de mis gatos y nunca dejo de aprender. Soy curioso por naturaleza: me gusta acumular datos de todo, explorar cacharros retro y entender cómo funcionan las cosas.
+          </p>
 
-			<!-- PROJECTS -->
-			<section id="projects" class="card reveal">
-				<div style="display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px">
-					<div>
-						<h3 style="margin:0">Proyectos destacados</h3>
-						<p class="muted" style="margin:6px 0 0 0">Algunos trabajos seleccionados. Haz clic para ver más.</p>
-					</div>
-					<div class="muted">Filtrar: <span class="chip">Web</span> <span class="chip">UI</span></div>
-				</div>
+          <div class="interests-cloud">
+            <span class="interest-tag">☕ Café</span>
+            <span class="interest-tag">🐱 Gatos</span>
+            <span class="interest-tag">🎸 Música</span>
+            <span class="interest-tag">🎮 Gaming</span>
+            <span class="interest-tag">📺 Anime & Manga</span>
+            <span class="interest-tag">🦸 Comics</span>
+            <span class="interest-tag">🏔️ Naturaleza</span>
+            <span class="interest-tag">💾 Retro Tech</span>
+            <span class="interest-tag">🧩 Puzzles</span>
+            <span class="interest-tag">💡 Open Source</span>
+            <span class="interest-tag">🤖 Robótica</span>
+            <span class="interest-tag">🎲 RPGs</span>
+          </div>
+        </div>
 
-				<div class="projects-grid" id="projects-grid">
-					<!-- Proyectos generados por JavaScript. Reemplaza con los tuyos en la sección "PROYECTOS_DATA" abajo -->
-				</div>
-			</section>
+        <div class="traits-grid reveal">
+          <div class="trait-card">
+            <span class="emoji">🔧</span>
+            <h4 data-i18n="trait.maker.title">Maker</h4>
+            <p data-i18n="trait.maker.desc">Fusiono naturaleza y tecnología desde la Patagonia. Si se puede construir, lo intento.</p>
+          </div>
+          <div class="trait-card">
+            <span class="emoji">📚</span>
+            <h4 data-i18n="trait.autodidact.title">Autodidacta</h4>
+            <p data-i18n="trait.autodidact.desc">Aprendizaje constante. Curioso, nerd y en evolución permanente.</p>
+          </div>
+          <div class="trait-card">
+            <span class="emoji">🎵</span>
+            <h4 data-i18n="trait.musician.title">Músico</h4>
+            <p data-i18n="trait.musician.desc">Guitarrista, compositor y productor. La música es mi otra forma de crear.</p>
+          </div>
+          <div class="trait-card">
+            <span class="emoji">🌱</span>
+            <h4 data-i18n="trait.sustainable.title">Sustentable</h4>
+            <p data-i18n="trait.sustainable.desc">Tecnología con conciencia ambiental. Soluciones que cuiden el planeta.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-			<!-- ABOUT / README -->
-			<section id="about" class="card reveal">
-				<h3 style="margin-top:0">Sobre mí</h3>
-				<div id="readme-content" class="muted">Cargando contenido desde README.md... (si existe)</div>
-				<!--
-					Sugerencia: Si quieres que la sección "Sobre mí" aparezca con el contenido de README.md,
-					coloca el archivo README.md en la raíz del repositorio y GitHub Pages lo servirá.
-					El script intentará cargar /README.md y convertir Markdown básico en HTML.
-				-->
-			</section>
+  <!-- ====== TECH STACK ====== -->
+  <section id="stack">
+    <div class="container">
+      <div class="section-divider"></div>
+      <h2 class="section-title reveal"><span data-i18n="stack.title">Stack Tecnológico</span></h2>
+      <p class="section-subtitle reveal" data-i18n="stack.subtitle">Herramientas con las que trabajo día a día</p>
 
-			<!-- CONTACT -->
-			<section id="contact" class="card reveal">
-				<h3 style="margin-top:0">Contacto</h3>
-				<p class="muted">¿Interesado en colaborar o tienes una idea? Escríbeme.</p>
-				<form id="contact-form" style="display:grid;gap:8px;margin-top:12px">
-					<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
-						<input name="name" placeholder="Tu nombre" required style="padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit">
-						<input name="email" placeholder="Tu correo" type="email" required style="padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit">
-					</div>
-					<textarea name="message" placeholder="Tu mensaje" rows="5" required style="padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit"></textarea>
-					<div style="display:flex;gap:8px;align-items:center">
-						<!-- En GitHub Pages puedes usar Formspree o Netlify Forms; por ahora este formulario abrirá el cliente de correo -->
-						<button class="btn" type="submit">Enviar correo</button>
-						<a class="btn secondary" href="mailto:tu@email.com">Enviar por Email</a>
-					</div>
-				</form>
-			</section>
+      <div class="stack-categories reveal">
+        <div class="stack-category">
+          <h3 data-i18n="stack.languages">Lenguajes</h3>
+          <div class="stack-items">
+            <span class="stack-item">Python</span>
+            <span class="stack-item">JavaScript</span>
+            <span class="stack-item">HTML5</span>
+            <span class="stack-item">CSS3</span>
+            <span class="stack-item">C</span>
+          </div>
+        </div>
+        <div class="stack-category">
+          <h3>Frameworks</h3>
+          <div class="stack-items">
+            <span class="stack-item">React</span>
+            <span class="stack-item">Node.js</span>
+            <span class="stack-item">Django</span>
+            <span class="stack-item">Sass/SCSS</span>
+          </div>
+        </div>
+        <div class="stack-category">
+          <h3 data-i18n="stack.databases">Bases de Datos</h3>
+          <div class="stack-items">
+            <span class="stack-item">MySQL</span>
+            <span class="stack-item">PostgreSQL</span>
+            <span class="stack-item">SQLite</span>
+            <span class="stack-item">MongoDB</span>
+          </div>
+        </div>
+        <div class="stack-category">
+          <h3 data-i18n="stack.tools">Herramientas & Plataformas</h3>
+          <div class="stack-items">
+            <span class="stack-item">Git</span>
+            <span class="stack-item">GitHub</span>
+            <span class="stack-item">GitLab</span>
+            <span class="stack-item">Linux</span>
+            <span class="stack-item">Ubuntu</span>
+            <span class="stack-item">Windows</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-		</main>
-		<footer class="reveal">
-			<div>© <span id="year"></span> ariviscomi — Hecho con ❤️ y HTML/CSS/JS</div>
-			<div class="muted">Sugerencia: Habilita GitHub Pages en Settings → Pages y usa la rama main (o gh-pages).</div>
-		</footer>
-	
-	<script src="app.js"></script>
+  <!-- ====== PROJECTS ====== -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-divider"></div>
+      <h2 class="section-title reveal"><span data-i18n="projects.title">Proyectos</span></h2>
+      <p class="section-subtitle reveal" data-i18n="projects.subtitle">Cosas que construí y sigo construyendo</p>
+
+      <div class="projects-filter reveal">
+        <button class="filter-btn active" data-filter="all" data-i18n="filter.all">Todos</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="react">React</button>
+        <button class="filter-btn" data-filter="tools" data-i18n="filter.tools">Herramientas</button>
+      </div>
+
+      <div class="projects-grid reveal">
+
+        <!-- RUFA -->
+        <div class="project-card" data-tags="python,tools">
+          <div class="project-header">
+            <span class="project-icon">⚡</span>
+            <div class="project-links">
+              <span class="project-tag private" data-i18n="tag.private">Privado</span>
+            </div>
+          </div>
+          <h3>RUFA</h3>
+          <p data-i18n="project.rufa.desc">Repositorio Unificado de Flujos y Automatizaciones. App en Python para centralizar, estandarizar y distribuir automatizaciones internas del área de Soporte Técnico en INVAP.</p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">MIT License</span>
+            <span class="project-tag">Automation</span>
+          </div>
+        </div>
+
+        <!-- Ticketly -->
+        <div class="project-card" data-tags="web">
+          <div class="project-header">
+            <span class="project-icon">🎫</span>
+            <div class="project-links">
+              <span class="project-tag private" data-i18n="tag.private">Privado</span>
+            </div>
+          </div>
+          <h3>Ticketly</h3>
+          <p data-i18n="project.ticketly.desc">Frontend de aplicación de tickets de soporte técnico. Sistema de gestión para seguimiento de incidencias y demandas.</p>
+          <div class="project-tags">
+            <span class="project-tag">SCSS</span>
+            <span class="project-tag">Frontend</span>
+            <span class="project-tag">IT Support</span>
+          </div>
+        </div>
+
+        <!-- Hormiga Artesana v2 -->
+        <div class="project-card" data-tags="web,react">
+          <div class="project-header">
+            <span class="project-icon">🐜</span>
+            <div class="project-links">
+              <span class="project-tag private" data-i18n="tag.private">Privado</span>
+            </div>
+          </div>
+          <h3>Hormiga Artesana v2</h3>
+          <p data-i18n="project.hormiga.desc">E-commerce para tienda virtual artesanal. Segunda versión migrada a ReactJS, evolucionando desde SCSS puro.</p>
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">E-commerce</span>
+          </div>
+        </div>
+
+        <!-- Identity Manager -->
+        <div class="project-card" data-tags="tools">
+          <div class="project-header">
+            <span class="project-icon">🔐</span>
+            <div class="project-links">
+              <span class="project-tag private" data-i18n="tag.private">Privado</span>
+            </div>
+          </div>
+          <h3>Identity Manager</h3>
+          <p data-i18n="project.identity.desc">Sistema de gestión de identidades desarrollado por F.A.A. Administración y control de acceso.</p>
+          <div class="project-tags">
+            <span class="project-tag">Identity</span>
+            <span class="project-tag">Security</span>
+          </div>
+        </div>
+
+        <!-- pyOTP -->
+        <div class="project-card" data-tags="python,tools">
+          <div class="project-header">
+            <span class="project-icon">🔑</span>
+            <div class="project-links">
+              <a href="https://github.com/ariviscomi/pyOTP" target="_blank" rel="noopener" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>pyOTP</h3>
+          <p data-i18n="project.pyotp.desc">Generador de tokens OTP desde la PC. Programa sencillo para autenticación de dos factores sin depender del celular.</p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">GPLv3</span>
+            <span class="project-tag">Security</span>
+          </div>
+        </div>
+
+        <!-- Amoblamientos Patagónicos -->
+        <div class="project-card" data-tags="web">
+          <div class="project-header">
+            <span class="project-icon">🏠</span>
+            <div class="project-links">
+              <a href="https://www.amoblamientospatagonicos.com" target="_blank" rel="noopener" title="Live">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="https://github.com/ariviscomi/amoblamientos_patagonicos_v1" target="_blank" rel="noopener" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Amoblamientos Patagónicos</h3>
+          <p data-i18n="project.amoblamientos.desc">Web catálogo estática para showroom de amoblamientos Johnson en San Carlos de Bariloche. Diseño responsive con galería de productos.</p>
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">Catalog</span>
+          </div>
+        </div>
+
+        <!-- MSNTS Web -->
+        <div class="project-card" data-tags="web">
+          <div class="project-header">
+            <span class="project-icon">🎸</span>
+            <div class="project-links">
+              <a href="https://github.com/ariviscomi/msnts_web" target="_blank" rel="noopener" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>MSNTS Web</h3>
+          <p data-i18n="project.msnts.desc">Sitio web para la banda de rock "Matame si no te Sirvo". Diseño temático con info de la banda, fechas y música.</p>
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">Music</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== MUSIC ====== -->
+  <section id="music" class="music-section">
+    <div class="container">
+      <div class="section-divider"></div>
+      <h2 class="section-title reveal"><span data-i18n="music.title">Música & Producción</span></h2>
+      <p class="section-subtitle reveal" data-i18n="music.subtitle">Mi otro lenguaje de creación — guitarrista, compositor y productor</p>
+
+      <div class="music-grid reveal">
+
+        <!-- Cachorro Producciones -->
+        <div class="music-card">
+          <span class="card-emoji">🎛️</span>
+          <h3>Cachorro Producciones</h3>
+          <span class="role" data-i18n="music.cachorro.role">Productor musical & multi-instrumentista</span>
+          <p data-i18n="music.cachorro.desc">Mi canal de producciones propias. Grabación, mezcla y masterización de proyectos musicales. Todas las pistas grabadas y producidas por mí.</p>
+          <div class="music-links">
+            <a href="https://www.youtube.com/@cachorro_producciones" target="_blank" rel="noopener" class="music-link">▶ YouTube</a>
+          </div>
+        </div>
+
+        <!-- Tocate ésta -->
+        <div class="music-card">
+          <span class="card-emoji">🎤</span>
+          <h3>Tocate Ésta</h3>
+          <span class="role" data-i18n="music.tocate.role">Productor musical & arreglador</span>
+          <p data-i18n="music.tocate.desc">Programa donde invitábamos a músicos a interpretar canciones fuera de su zona de confort. Yo grababa y producía los covers completos con todos los instrumentos. Un cineasta producía el videoclip y luego entrevistábamos al invitado.</p>
+          <div class="music-links">
+            <a href="https://www.youtube.com/@cachorro_producciones" target="_blank" rel="noopener" class="music-link">▶ YouTube</a>
+          </div>
+        </div>
+
+        <!-- Matame si no te Sirvo -->
+        <div class="music-card">
+          <span class="card-emoji">🔥</span>
+          <h3>Matame si no te Sirvo</h3>
+          <span class="role" data-i18n="music.msnts.role">Guitarrista, compositor & productor del disco</span>
+          <p data-i18n="music.msnts.desc">Mi banda de rock. Compuse muchas de las canciones y grabé el disco completo. Las grabaciones del álbum son producción mía.</p>
+          <div class="music-links">
+            <a href="https://open.spotify.com/intl-es/artist/4JM9aYHYP7EA7TUyX3a72j" target="_blank" rel="noopener" class="music-link">🎵 Spotify</a>
+            <a href="https://www.youtube.com/@matamesinotesirvo5664" target="_blank" rel="noopener" class="music-link">▶ YouTube</a>
+          </div>
+        </div>
+
+        <!-- Sr. Gómez -->
+        <div class="music-card">
+          <span class="card-emoji">🎸</span>
+          <h3>Sr. Gómez</h3>
+          <span class="role" data-i18n="music.gomez.role">Bajista</span>
+          <p data-i18n="music.gomez.desc">Banda en la que toqué el bajo. Rock desde Bariloche.</p>
+          <div class="music-links">
+            <a href="https://www.youtube.com/@senorgomezbanda4978" target="_blank" rel="noopener" class="music-link">▶ YouTube</a>
+          </div>
+        </div>
+
+        <!-- Esta Por Verse -->
+        <div class="music-card">
+          <span class="card-emoji">📡</span>
+          <h3>Esta Por Verse</h3>
+          <span class="role" data-i18n="music.epv.role">Fundador & productor</span>
+          <p data-i18n="music.epv.desc">Proyecto de streaming que recopila distintos programas. En Bariloche. Próximamente: evento mensual de bandas en vivo con entrevistas y grabación de audio y video.</p>
+          <div class="music-links">
+            <a href="https://www.twitch.tv/estaporverse/about" target="_blank" rel="noopener" class="music-link">📺 Twitch</a>
+            <a href="https://www.youtube.com/@EstaPorVerse" target="_blank" rel="noopener" class="music-link">▶ YouTube</a>
+            <a href="https://www.matecito.co/estaporverse" target="_blank" rel="noopener" class="music-link">🧉 Matecito</a>
+          </div>
+        </div>
+
+        <!-- Future -->
+        <div class="music-card" style="border-style: dashed; opacity: 0.7;">
+          <span class="card-emoji">🚀</span>
+          <h3 data-i18n="music.future.title">Próximamente</h3>
+          <span class="role" data-i18n="music.future.role">En desarrollo</span>
+          <p data-i18n="music.future.desc">Nueva banda en formación. Evento mensual/anual donde diversas bandas tocan, entrevistas en vivo y grabación profesional de audio y video.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== EXPERIENCE ====== -->
+  <section id="experience" class="experience-section">
+    <div class="container">
+      <div class="section-divider"></div>
+      <h2 class="section-title reveal"><span data-i18n="experience.title">Experiencia</span></h2>
+      <p class="section-subtitle reveal" data-i18n="experience.subtitle">Mi recorrido profesional</p>
+
+      <div class="timeline reveal">
+
+        <div class="timeline-item">
+          <span class="period" data-i18n="exp.invap.period">Mar 2025 — Presente</span>
+          <h3 data-i18n="exp.invap.title">Técnico de Soporte de TI</h3>
+          <div class="company">INVAP S.A.U. — San Carlos de Bariloche</div>
+          <div class="description">
+            <ul>
+              <li data-i18n="exp.invap.d1">Asistencia técnica de primer nivel, resolviendo incidencias y gestionando demandas</li>
+              <li data-i18n="exp.invap.d2">Colaboración con equipos multidisciplinarios para mantener altos estándares de servicio</li>
+              <li data-i18n="exp.invap.d3">Desarrollo de automatizaciones internas (RUFA) para optimizar procesos del área</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="period" data-i18n="exp.delturista.period">Feb 2024 — Feb 2025</span>
+          <h3 data-i18n="exp.delturista.title">Especialista en Soporte Técnico</h3>
+          <div class="company">DELTURISTA Chocolates</div>
+          <div class="description">
+            <ul>
+              <li data-i18n="exp.delturista.d1">Diseño e implementación de redes informáticas, incluyendo cableado estructurado</li>
+              <li data-i18n="exp.delturista.d2">Instalación y configuración de dispositivos de red (switches, routers, access points)</li>
+              <li data-i18n="exp.delturista.d3">Soporte técnico a usuarios, resolución de incidencias y mantenimiento de hardware y software</li>
+              <li data-i18n="exp.delturista.d4">Instalación de sistemas de seguridad: cámaras de vigilancia y controles de acceso</li>
+              <li data-i18n="exp.delturista.d5">Gestión y mantenimiento de servidores y documentación de procesos</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="period" data-i18n="exp.molinos.period">Mar 2021 — Dic 2023</span>
+          <h3 data-i18n="exp.molinos.title">Técnico Informático</h3>
+          <div class="company">Los Molinos</div>
+          <div class="description">
+            <ul>
+              <li data-i18n="exp.molinos.d1">Mantenimiento preventivo y reparación de equipos informáticos y telecomunicaciones</li>
+              <li data-i18n="exp.molinos.d2">Administración de computadoras, servidores de datos y redes de internet para APDES colegios</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Education -->
+      <h3 class="section-title reveal" style="font-size: 1.5rem; margin-top: 3rem;">
+        <span data-i18n="education.title">Formación</span>
+      </h3>
+
+      <div class="education-grid reveal">
+        <div class="education-card">
+          <h4 data-i18n="edu.coderhouse.title">Desarrollador de Aplicaciones ReactJS</h4>
+          <div class="institution">Coderhouse</div>
+        </div>
+        <div class="education-card">
+          <h4 data-i18n="edu.madero.title">Educación Secundaria Obligatoria (ESO)</h4>
+          <div class="institution">Instituto Madero</div>
+        </div>
+        <div class="education-card" style="border-style: dashed; opacity: 0.7;">
+          <h4 data-i18n="edu.more">...y más próximamente</h4>
+          <div class="institution" data-i18n="edu.more.sub">Formación continua en progreso</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====== BLOG ====== -->
+  <section id="blog" class="blog-section">
+    <div class="container">
+      <div class="section-divider"></div>
+      <h2 class="section-title reveal"><span>Blog</span></h2>
+      <p class="section-subtitle reveal" data-i18n="blog.subtitle">Opiniones, aprendizajes y descubrimientos</p>
+
+      <div class="blog-placeholder reveal">
+        <span class="emoji-big">✍️</span>
+        <h3 data-i18n="blog.coming">Próximamente</h3>
+        <p data-i18n="blog.coming.desc">Estoy preparando contenido sobre tecnología, música, opiniones y todo lo que me inspire compartir. Volvé pronto.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT ====== -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-divider" style="margin: 0 auto 2rem;"></div>
+      <h2 class="section-title reveal"><span data-i18n="contact.title">Hablemos</span></h2>
+      <p class="section-subtitle reveal" data-i18n="contact.subtitle">¿Tenés un proyecto, una idea o simplemente querés saludar?</p>
+
+      <div class="contact-links reveal">
+        <a href="mailto:arielviscomi.mail@gmail.com" class="contact-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Email
+        </a>
+        <a href="https://www.linkedin.com/in/ariel-viscomi/" target="_blank" rel="noopener" class="contact-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/ariviscomi" target="_blank" rel="noopener" class="contact-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="quote" data-i18n="footer.quote">"Si funciona, no lo toques... si no, probá reiniciarlo" 🤖</p>
+      <p data-i18n="footer.copy">Hecho con ☕ y 🎸 desde Bariloche — Ariel Viscomi © 2025</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
