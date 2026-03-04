@@ -6,7 +6,7 @@ Sitio estático single-page, bilingüe (ES/EN), con estética **Equilibrio Austr
 
 ## Demo
 
-**https://ariviscomi.github.io**
+**[https://ariviscomi.github.io](https://ariviscomi.github.io)**
 
 ## Stack
 
@@ -17,7 +17,7 @@ Sitio estático single-page, bilingüe (ES/EN), con estética **Equilibrio Austr
 
 ## Estructura
 
-```
+```files
 ├── index.html    # Documento principal (544 líneas)
 ├── style.css     # Estilos — paleta Equilibrio Austral (1133 líneas)
 ├── script.js     # i18n, navegación, filtros, scroll reveal (331 líneas)
@@ -26,16 +26,16 @@ Sitio estático single-page, bilingüe (ES/EN), con estética **Equilibrio Austr
 
 ## Secciones
 
-| Sección | Descripción |
-|---------|-------------|
-| **Hero** | Presentación con nombre, subtítulo y CTAs |
-| **Sobre mí** | Bio, intereses, traits con iconos |
-| **Stack Tecnológico** | Tech cards con categorías (lenguajes, frameworks, tools, aprendiendo) |
-| **Proyectos** | Cards filtrables por tecnología, con badges público/privado |
-| **Música & Producción** | Proyectos musicales como Cachorro, MSNTS, Sr. Gómez, Esta Por Verse |
-| **Experiencia** | Timeline profesional + educación |
-| **Blog** | Placeholder (próximamente con React + Supabase) |
-| **Contacto** | Email, LinkedIn, GitHub |
+| Sección                 | Descripción                                                           |
+|-------------------------|-----------------------------------------------------------------------|
+| **Hero**                | Presentación con nombre, subtítulo y CTAs                             |
+| **Sobre mí**            | Bio, intereses, traits con iconos                                     |
+| **Stack Tecnológico**   | Tech cards con categorías (lenguajes, frameworks, tools, aprendiendo) |
+| **Proyectos**           | Cards filtrables por tecnología, con badges público/privado           |
+| **Música & Producción** | Proyectos musicales como Cachorro, MSNTS, Sr. Gómez, Esta Por Verse   |
+| **Experiencia**         | Timeline profesional + educación                                      |
+| **Blog**                | Placeholder (próximamente con React + Supabase)                       |
+| **Contacto**            | Email, LinkedIn, GitHub                                               |
 
 ## Features
 
@@ -48,15 +48,15 @@ Sitio estático single-page, bilingüe (ES/EN), con estética **Equilibrio Austr
 
 ## Paleta de colores — Equilibrio Austral
 
-| Color | Hex | Uso |
-|-------|-----|-----|
-| Noche profunda | `#090b16` | Background base |
+| Color          | Hex       | Uso                           |
+|----------------|-----------|-------------------------------|
+| Noche profunda | `#090b16` | Background base               |
 | Celeste Patria | `#74ACDF` | Acento tech / links / primary |
-| Naranja Fuego | `#F97316` | Acento música / creatividad |
-| Violeta Nexo | `#8B5CF6` | Acento personal / identidad |
-| Sol de Mayo | `#F4B942` | Highlights y CTAs |
-| Carmesí | `#EF4444` | Alertas / énfasis |
-| Rosa Amanecer | `#F472B6` | Complementario |
+| Naranja Fuego  | `#F97316` | Acento música / creatividad   |
+| Violeta Nexo   | `#8B5CF6` | Acento personal / identidad   |
+| Sol de Mayo    | `#F4B942` | Highlights y CTAs             |
+| Carmesí        | `#EF4444` | Alertas / énfasis             |
+| Rosa Amanecer  | `#F472B6` | Complementario                |
 
 ## Deploy
 
@@ -65,15 +65,7 @@ GitHub Pages directo desde la rama `main`:
 1. Crear repositorio `ariviscomi.github.io` en GitHub
 2. Subir `index.html`, `style.css`, `script.js` a la raíz
 3. Settings → Pages → Source: `main` branch, `/ (root)`
-4. El sitio estará live en **https://ariviscomi.github.io**
-
-```bash
-git init
-git remote add origin git@github.com:ariviscomi/ariviscomi.github.io.git
-git add index.html style.css script.js README.md
-git commit -m "feat: portfolio estático v1 — Equilibrio Austral"
-git push -u origin main
-```
+4. El sitio estará live en **[https://ariviscomi.github.io](https://ariviscomi.github.io)**
 
 ## Desarrollo local
 
@@ -105,7 +97,7 @@ La próxima versión migra a **React 18 + Vite + Supabase** para agregar:
 
 - GitHub: [ariviscomi](https://github.com/ariviscomi)
 - LinkedIn: [ariel-viscomi](https://linkedin.com/in/ariel-viscomi)
-- Email: arielviscomi.mail@gmail.com
+- Email: [arielviscomi.mail@gmail.com](mailto:arielviscomi.mail@gmail.com)
 
 ## Licencia
 
