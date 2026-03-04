@@ -1,6 +1,6 @@
 /* ============================================
    ARIEL VISCOMI — Portfolio JS
-   Navigation, i18n, Filters, Scroll Animations
+   Navigation, i18n, Filters, Scroll Animations 
    ============================================ */
 
 // ---- i18n Translations ----
